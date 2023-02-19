@@ -2,8 +2,9 @@ import React, {useState} from 'react'
 import { useNavigate } from 'react-router-dom'
 
 import { preview } from '../assets';
-import { getRandomPrompt } from '../utilis';
+import { getRandomPrompt } from '../utilis';    
 import { FormField, Loader } from '../components';
+
 
 const CreatePost = () => {
   return (
