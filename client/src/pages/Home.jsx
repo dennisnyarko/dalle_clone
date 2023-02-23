@@ -16,7 +16,7 @@ const Home = () => {
     const [allPosts, setAllPosts] = useState(null);
 
     const [searchText, setSearchText] = useState('');
-    const [searchResults, setSearchResults] = useState(null);
+    const [searchResults, setSearchedResults] = useState(null);
     const [searchTimeout, setSearchTimeout] = useState(null);
 
     useEffect(() => {
