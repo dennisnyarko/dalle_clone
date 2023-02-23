@@ -52,7 +52,10 @@ const Home = () => {
     }, []);
 
     const handleSearchChange = (e) => {
+        clearTimeout(searchTimeout);
         setSearchText(e.target.value);
+
+        setSearchTimeout(
 
         setTimeout(() => {
 
@@ -60,7 +63,7 @@ const Home = () => {
 
             setSearchedResults(searchResults);
 
-        }, 500);
+        }, 500));
     }
 
 
